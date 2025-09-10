@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofitel Manila Hotel - Reservation</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Hotel Logo" width="40"> Sofitel Manila
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Landing Section -->
+  <header id="home" class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="overlay"></div>
+    <div class="content text-white">
+      <h1>Welcome to Sofitel Manila</h1>
+      <p>Experience luxury, comfort, and elegance in every stay.</p>
+      <button class="btn btn-warning btn-lg" id="reserveBtn">Book Now</button>
+    </div>
+  </header>
+
+  <!-- Amenities Section -->
+  <section id="amenities" class="container my-5">
+    <h2 class="text-center mb-4">Our Top Amenities</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="images/swimming-pool.jpg" class="img-fluid rounded shadow" alt="Swimming Pool">
+        <h4>Swimming Pool</h4>
+        <p>Relax and refresh in our infinity pool overlooking Manila Bay.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/hotel-room.jpg" class="img-fluid rounded shadow" alt="Hotel Rooms">
+        <h4>Luxury Rooms</h4>
+        <p>Stay in comfort with modern rooms designed for relaxation.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/dining.jpg" class="img-fluid rounded shadow" alt="Dining">
+        <h4>Fine Dining</h4>
+        <p>Enjoy international cuisine in our elegant dining area.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-dark">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-4">
+    <div class="container">
+      <div class="row">
+        <!-- Column 1 -->
+        <div class="col-md-6">
+          <h5>About Sofitel Manila</h5>
+          <p>A 5-star luxury hotel in Manila Bay offering the finest hospitality and amenities.</p>
+        </div>
+        <!-- Column 2 -->
+        <div class="col-md-6">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-white">Home</a></li>
+            <li><a href="#amenities" class="text-white">Amenities</a></li>
+            <li><a href="#contact" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-3">&copy; 2025 Sofitel Manila. All rights reserved.</div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="reservationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Reservation Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <input type="text" class="form-control mb-2" placeholder="Full Name" required>
+            <input type="email" class="form-control mb-2" placeholder="Email" required>
+            <input type="date" class="form-control mb-2" required>
+            <input type="number" class="form-control mb-2" placeholder="Number of Guests" required>
+            <button type="submit" class="btn btn-warning w-100">Confirm Reservation</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap & JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
